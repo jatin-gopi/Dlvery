@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="AddRegisterstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <title>Home</title>
+  </head>
+    <body>
+      <!--Main Navigation-->
+<header>
+	<div class="sidenav">
+  <a href="#about">Register</a>
+  <button class="dropdown-btn"> Register
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="AddRegister.html">Add</a>
+    <a href="DeleteRegister.html">Delete</a>
+  </div>
+  <a href="Employeinfo.html">Employee info</a>
+  <button class="dropdown-btn"> ProductCategories
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="Category.html">Category</a>
+    <a href="damaged.html">Damaged</a>
+    <a href="Expiary.html">Expired</a>
+  </div>
+  <button class="dropdown-btn"> Updates
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="warehouse.html">Warehouse Goods timings</a>
+  </div>
+  <button class="dropdown-btn">Reports
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="ddelviery.html">Delivery Damages</a>
+    <a href="pdelivery.html">Pending Delivery</a>
+  </div>
+  <a href="warehouseview.html">WareHouse</a>
+</div>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark indigo bg-dark">
+      <a class="navbar-brand" href="Home.html"><strong>DlVery</strong></a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                  <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Account
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="Login.html">Logout</a>
+              </div>
+            </li>
+          </ul>
+      </div>
+  </nav>
+  <div class="view intro-2">
+      <div class="full-bg-img">
+          <div class="mask rgba-black-light flex-center">
+              <div class="container text-center white-text">
+                  <div class="white-text text-center wow fadeInUp">
+                  <div class="container">
+                      <div class="row justify-content-center">
+                                          <div class="col-md-8">
+                                              <div class="card">
+                                                  <div class="card-header">Register</div>
+                                                  <div class="card-body">
+                      
+                                                      <form class="form-horizontal" method="post" action="add">
+                      
+                                                          <div class="form-group">
+                                                              <label for="name" class="cols-sm-2 control-label">ID</label>
+                                                              <div class="cols-sm-10">
+                                                                  <div class="input-group">
+                                                                      <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                                                      <input type="text" class="form-control" name="id" id="name" placeholder="ID" />
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="form-group">
+                                                              <label for="email" class="cols-sm-2 control-label">Name</label>
+                                                              <div class="cols-sm-10">
+                                                                  <div class="input-group">
+                                                                      <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                                                      <input type="text" class="form-control" name="name" id="email" placeholder="Enter your Name" />
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="form-group">
+                                                              <label for="username" class="cols-sm-2 control-label">Phone Number</label>
+                                                              <div class="cols-sm-10">
+                                                                  <div class="input-group">
+                                                                      <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                                                                      <input type="text" class="form-control" name="phno" id="username" placeholder="Enter your Phoneno" />
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="form-group">
+                                                              <label for="username" class="cols-sm-2 control-label">Department</label>
+                                                              <div class="cols-sm-10">
+                                                                  <div class="input-group">
+                                                                      <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                                                                      <input type="text" class="form-control" name="dept" id="username" placeholder="Enter your Department" />
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="form-group">
+                                                              <label for="password" class="cols-sm-2 control-label">Password</label>
+                                                              <div class="cols-sm-10">
+                                                                  <div class="input-group">
+                                                                      <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                                                      <input type="password" class="form-control" name="password" id="password" placeholder="Enter your Password" />
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                           <input type="submit" id='button'>
+                                                      </form>
+                                                  </div>
+                      
+                                              </div>
+                                          </div>
+                                      </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+</header>
+<!--Main Navigation-->
+    <script src="Homech.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>
